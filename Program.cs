@@ -12,30 +12,42 @@ public class Banca
 
     List<Prestito> Prestiti = new List<Prestito>();
 
-    //4 Per la banca deve essere possibile:
-    //aggiungere, modificare e ricercare un cliente.
-    //aggiungere un prestito.
-    //effettuare delle ricerche sui prestiti concessi ad un cliente dato il codice fiscale
+    public Banca(string nome)
+    {
+        Nome = nome;
+
+    }
+
+    //4 Per la banca deve essere possibile
     //sapere, dato il codice fiscale di un cliente, l’ammontare totale dei prestiti concessi.
     //sapere, dato il codice fiscale di un cliente, quante rate rimangono da pagare alla data odierna.
     //Per i clienti si vuole stampare un prospetto con tutti i dati che li caratterizzano in un formato di tipo stringa
-    public void AggModRicerca(Utente utente)
+    public void AggModRicerca(Utente utente) //aggiungere, modificare e ricercare un cliente.
     {
         Utenti.Add(utente);
     }
-    public void AggPrestito(Prestito prestito)
+    public void AggPrestito(Prestito prestito) //aggiungere un prestito.
     {
         Prestiti.Add(prestito);
     }
 
-    //public List<Banca>CercaPrestito(string cerca)
-    //{
-    //    List<Banca> risultati = new List<Banca>();
+    //effettuare delle ricerche sui prestiti concessi ad un cliente dato il codice fiscale
+    public List<Prestito> CercaPrestiti(string CodiceFiscale)
+    {
+        List<Prestito> risultati = new List<Prestito>();
+        {
+            foreach (Prestito item in Prestiti)
+            {
+                if (Prestito.utente.CodiceFiscale.Contains(CodiceFiscale))
+                {
 
-    //    foreach (Prestito item in Prestiti)
-    //    {
-    //        if (Prestito.ID == Utente.CodiceFiscale) ;
-    //    }
-    //}
+                }
+
+            }
+        }
+        return null;
+    }
 }
+     
+    
 

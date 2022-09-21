@@ -1,10 +1,11 @@
-﻿Banca banca = new Banca();
+﻿Banca banca = new Banca("Bank Of America");
 
 Utente utente = new Utente();
 
 Prestito prestito = new Prestito();
 
 //Creazione utente dinamico
+Console.WriteLine("Benvenuto in {0} ", banca.Nome);
 Console.WriteLine("Inserisci il tuo nome ");
 utente.Nome = Console.ReadLine();
 Console.WriteLine("Inserisci il tuo cognome ");
@@ -17,7 +18,7 @@ utente.Stipendio = Convert.ToInt32(Console.ReadLine());
 //Creazione prestito dinamico
 Console.WriteLine("Inserisci il ID ");
 prestito.ID = Convert.ToInt32(Console.ReadLine());
-Prestito.Utente = utente;
+prestito.Utente = utente;
 Console.WriteLine("Inserisci il tuo ammontare ");
 prestito.Ammontare = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Inserisci la tua rata ");

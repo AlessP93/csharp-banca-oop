@@ -9,7 +9,7 @@
 public class Prestito
 {
     public int ID { get; set; }
-    Utente utente { get; set; }
+    public Utente utente { get; set; }
     public int Ammontare { get; set; }
     public int Rata { get; set; }
     public DateOnly DataInizio { get; set; }
