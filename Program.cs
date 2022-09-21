@@ -28,14 +28,14 @@ public class Banca
         Prestiti.Add(prestito);
     }
 
-    public List<Banca>CercaPrestito(string cerca)
-    {
-        List<Banca> risultati = new List<Banca>();
+    //public List<Banca>CercaPrestito(string cerca)
+    //{
+    //    List<Banca> risultati = new List<Banca>();
 
-        foreach (Prestito item in Prestiti)
-        {
-            //if (Prestito.ID == Utente.CodiceFiscale) ;
-        }
-    }
+    //    foreach (Prestito item in Prestiti)
+    //    {
+    //        if (Prestito.ID == Utente.CodiceFiscale) ;
+    //    }
+    //}
 }
 

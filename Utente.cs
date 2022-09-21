@@ -8,8 +8,7 @@ public class Utente
     public string Nome { get; set; }
     public string Cognome { get; set; }
     public string CodiceFiscale { get; set; }
-
-    public int Stipendio;
+    public int Stipendio { get; set; }
 
     public Utente(string nome, string cognome, string codiceFiscale, int stipendio)
     {

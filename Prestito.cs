@@ -9,7 +9,7 @@
 public class Prestito
 {
     public int ID { get; set; }
-    Utente Utente { get; set; }
+    Utente utente { get; set; }
     public int Ammontare { get; set; }
     public int Rata { get; set; }
     public DateOnly DataInizio { get; set; }
@@ -18,7 +18,7 @@ public class Prestito
     public Prestito(int iD, Utente utente, int ammontare, int rata, DateOnly dataInizio, DateOnly dataFine)
     {
         ID = iD;
-        this.Utente = utente;
+        this.utente = utente;
         Ammontare = ammontare;
         Rata = rata;
         DataInizio = dataInizio;
