@@ -36,16 +36,15 @@ public class Banca
     {
         List<Prestito> risultati = new List<Prestito>();
         {
-            foreach (Prestito item in Prestiti)
+            foreach (Prestito prestito in Prestiti)
             {
-                if (Prestito.utente.CodiceFiscale.Contains(CodiceFiscale))
+                if (prestito.utente.CodiceFiscale.Contains(CodiceFiscale))
                 {
-
+                    Prestiti.Add((Prestito)prestito);
                 }
-
             }
         }
-        return null;
+        return Prestiti;
     }
 }
      

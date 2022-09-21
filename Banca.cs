@@ -18,7 +18,7 @@ utente.Stipendio = Convert.ToInt32(Console.ReadLine());
 //Creazione prestito dinamico
 Console.WriteLine("Inserisci il ID ");
 prestito.ID = Convert.ToInt32(Console.ReadLine());
-prestito.Utente = utente;
+prestito.utente = utente;
 Console.WriteLine("Inserisci il tuo ammontare ");
 prestito.Ammontare = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Inserisci la tua rata ");
