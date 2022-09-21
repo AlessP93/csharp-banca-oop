@@ -9,6 +9,18 @@ public class Utente
     public string Cognome { get; set; }
     public string CodiceFiscale { get; set; }
 
-    private double Stipendio;
+    public int Stipendio;
 
+    public Utente(string nome, string cognome, string codiceFiscale, int stipendio)
+    {
+        Nome = nome;
+        Cognome = cognome;
+        CodiceFiscale = codiceFiscale;
+        Stipendio = stipendio;
+    }
+
+    public Utente()
+    {
+
+    }
 }
